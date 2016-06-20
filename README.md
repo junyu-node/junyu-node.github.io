@@ -4,5 +4,4 @@ npm install hexo -g
 npm install init
 npm install
 
-
 git clone https://github.com/iissnan/hexo-theme-next themes/next
