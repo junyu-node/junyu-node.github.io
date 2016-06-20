@@ -1,4 +1,4 @@
-git clone https://github.com/junyu-node/junyu-node.github.io/tree/hexo
+git clone https://github.com/junyu-node/junyu-node.github.io
 
 npm install
 
