@@ -80,6 +80,7 @@ cd junyu-node.github.io.git
 npm install hexo
 npm install
 npm install hexo-deployer-git//（记得，不需要hexo init这条指令）。
+
 ```
 
 
