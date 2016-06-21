@@ -80,8 +80,39 @@ cd junyu-node.github.io.git
 npm install hexo
 npm install
 npm install hexo-deployer-git//（记得，不需要hexo init这条指令）。
+git clone https://github.com/iissnan/hexo-theme-next themes/next
+
 
 ```
+3.修改 next 里边的配置 然后就可以正常的使用了
+```python
+
+menu:
+  home: /
+  #categories: /categories
+  about: /about
+  archives: /archives
+  tags: /tags
+  #commonweal: /404.html
+  menu_icons:
+    enable: true
+    #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
+    home: home
+    about: "贾畯嵎(junyu)"
+    categories: th
+    tags: tags
+    archives: archive
+    commonweal: heartbeat
+    # Swiftype Search API Key
+    swiftype_key: yBBCHczEQy4isXyS-wws
+
+    # Baidu Analytics ID
+    baidu_analytics: 33438f0a10c1389908796cdf8c3b6caf
+
+    # Duoshuo ShortName
+    duoshuo_shortname: junyu-node
+```
+
 
 
 
