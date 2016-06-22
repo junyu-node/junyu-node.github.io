@@ -1,7 +1,7 @@
 ---
 title: "markdown 简明语法手册"
 date: 2016-06-16 22:48:34
-tags: [markdown]
+tags: [markdown,hexo]
 comments: true
 type: "tags"
 ---

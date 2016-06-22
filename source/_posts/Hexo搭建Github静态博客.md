@@ -1,7 +1,7 @@
 ---
 title: Hexo搭建Github静态博客
 date: 2016-06-19 06:52:38
-tags: [hexo]
+tags: [hexo,git]
 comments: true
 type: "tags"
 ---
