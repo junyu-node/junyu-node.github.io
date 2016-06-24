@@ -24,9 +24,9 @@ comments: true
 
  1.ifame 页面代码
  ---------------
- <pre>
+ ```
 <iframe src="" style="display:none" frameborder="0" id="iframeA" name="iframeA"></iframe>
- </pre>
+ ```
  ```JavaScript
 
  <script>
@@ -46,9 +46,9 @@ comments: true
 
  2. 展示的页面
  -----------------
- <pre>
+```
  <iframe src="http://zx.jiaju.sina.com.cn/index.php?app=Vote&mod=ContestActivity&id=221" frameborder="0" width="1280" id="iframeB" style="min-height:370px"  name="iframeB"></iframe>
- </pre>
+```
 
  3. 中间的页面
  ---------------
