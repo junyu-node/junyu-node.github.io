@@ -1,5 +1,5 @@
 ---
-title: 基本的shlel命令
+title: 基本的shell命令
 date: 2016-06-28 09:01:43
 tags: [shell,liunx]
 comments: true

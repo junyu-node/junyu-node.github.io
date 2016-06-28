@@ -24,7 +24,7 @@
       <file leaf-file-name="git简单应用.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/git简单应用.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="95.77778">
+            <state vertical-scroll-proportion="-4.9259257">
               <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding />
             </state>
@@ -74,8 +74,8 @@
       <file leaf-file-name="基本的shell命令.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_posts/基本的shell命令.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25747126">
-              <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.04367816">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -611,14 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/git简单应用.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="95.77778">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/tags/index.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1111112">
@@ -683,10 +675,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/git简单应用.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.9259257">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/基本的shell命令.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25747126">
-          <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.04367816">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
         </state>
       </provider>
