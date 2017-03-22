@@ -1,0 +1,735 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="git,js," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="一些git的简单应用入门">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git简单应用">
+<meta property="og:url" content="https://junyu-node.github.io/git简单应用/index.html">
+<meta property="og:site_name" content="junyu blog">
+<meta property="og:description" content="一些git的简单应用入门">
+<meta property="og:updated_time" content="2017-03-22T08:07:11.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git简单应用">
+<meta name="twitter:description" content="一些git的简单应用入门">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://junyu-node.github.io/git简单应用/"/>
+
+
+
+
+
+  <title> git简单应用 | junyu blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">junyu blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">junyu blog</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-贾畯嵎(junyu)"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://junyu-node.github.io/git简单应用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="junyu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/15951949?v=3&s=128">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="junyu blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                git简单应用
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-06-21T14:18:26+08:00">
+                2016-06-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/git简单应用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="git简单应用/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>一些git的简单应用入门</p>
+<a id="more"></a>
+<h1 id="1-安装git"><a href="#1-安装git" class="headerlink" title="1.安装git"></a>1.安装git</h1><p>安装地址为<a href="https://git-scm.com/download/" target="_blank" rel="external">https://git-scm.com/download/</a></p>
+<h1 id="2-基本配置"><a href="#2-基本配置" class="headerlink" title="2.基本配置"></a>2.基本配置</h1><h2 id="1-配置自己的用户名密码"><a href="#1-配置自己的用户名密码" class="headerlink" title="1.配置自己的用户名密码"></a>1.配置自己的用户名密码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;junyu-node&quot;;</div><div class="line">git config --global user.email &quot;1161976385@qq.com&quot;;</div></pre></td></tr></table></figure>
+<p>2.可以查看已有的配置信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --list</div></pre></td></tr></table></figure>
+<h1 id="3-基本操作"><a href="#3-基本操作" class="headerlink" title="3.基本操作"></a>3.基本操作</h1><h2 id="3-1新建一个仓库"><a href="#3-1新建一个仓库" class="headerlink" title="3.1新建一个仓库"></a>3.1新建一个仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">//如果已经有了一个仓库 直接clone到本地即可</div><div class="line">git clone (git地址)</div></pre></td></tr></table></figure>
+<h2 id="3-2-讲文件添加到缓存"><a href="#3-2-讲文件添加到缓存" class="headerlink" title="3.2 讲文件添加到缓存"></a>3.2 讲文件添加到缓存</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//添加一个文件</div><div class="line">git add README.md</div><div class="line">//添加所有的文件</div><div class="line">git add -A</div><div class="line">//或者</div><div class="line">git add *</div></pre></td></tr></table></figure>
+<h2 id="3-3查看当前版本库各个文件的状态"><a href="#3-3查看当前版本库各个文件的状态" class="headerlink" title="3.3查看当前版本库各个文件的状态"></a>3.3查看当前版本库各个文件的状态</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git status</div></pre></td></tr></table></figure>
+<h2 id="3-4将缓冲区的内容添加到仓库"><a href="#3-4将缓冲区的内容添加到仓库" class="headerlink" title="3.4将缓冲区的内容添加到仓库"></a>3.4将缓冲区的内容添加到仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m&quot;注释&quot;</div></pre></td></tr></table></figure>
+<h2 id="3-5取消已经缓存的文件"><a href="#3-5取消已经缓存的文件" class="headerlink" title="3.5取消已经缓存的文件"></a>3.5取消已经缓存的文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git reset HEAD --hello.php</div><div class="line">//如果粗暴些</div><div class="line">git reset --bard 版本号</div><div class="line">// 删除某个文件并且从git的仓库移除</div><div class="line">git rm 文件</div></pre></td></tr></table></figure>
+<h2 id="3-6设置别名"><a href="#3-6设置别名" class="headerlink" title="3.6设置别名"></a>3.6设置别名</h2><p>设置别名的好处就是方便写命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git config --golbal alias.st status</div><div class="line">git config --golbal alias.ci commit</div><div class="line">git config --golbal alias.co checkout</div><div class="line">git config --golbal alias.br btanch</div></pre></td></tr></table></figure>
+<h1 id="4-push到服务器上"><a href="#4-push到服务器上" class="headerlink" title="4 push到服务器上"></a>4 push到服务器上</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//你可以为这个仓库设置一个远程地址</div><div class="line">git remote add origin git地址</div><div class="line">//origin 为别名</div><div class="line">git push origin master//(master为分支名称)</div></pre></td></tr></table></figure>
+<p>如果不想每次上传都输入密码可以在本地生成一个key 配置在github上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t -rse -C &quot;1161976385@qq.com&quot;</div></pre></td></tr></table></figure></p>
+<p>复制key<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat ~/ssh_rea.pub</div></pre></td></tr></table></figure></p>
+<p>然后在github的账户 点击头像-&gt; settiings -&gt;SSH KEYS -&gt;ADD KEYS</p>
+<h1 id="5-分支"><a href="#5-分支" class="headerlink" title="5.分支"></a>5.分支</h1><p>5.1创建分支</p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch mybranch(分支名字)</div></pre></td></tr></table></figure>
+<h2 id="5-2切换分支"><a href="#5-2切换分支" class="headerlink" title="5.2切换分支"></a>5.2切换分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git checkout mybranch</div><div class="line"></div><div class="line"></div><div class="line">// 创建并且切换到该分支上</div><div class="line">git checkout -b mybranch</div></pre></td></tr></table></figure>
+<h2 id="5-3删除分支"><a href="#5-3删除分支" class="headerlink" title="5.3删除分支"></a>5.3删除分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -d mybranch</div></pre></td></tr></table></figure>
+<h2 id="5-4-push到远程仓库"><a href="#5-4-push到远程仓库" class="headerlink" title="5.4 push到远程仓库"></a>5.4 push到远程仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin mybranch</div></pre></td></tr></table></figure>
+<h2 id="5-5-跟新分支"><a href="#5-5-跟新分支" class="headerlink" title="5.5 跟新分支"></a>5.5 跟新分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//这样就把本地的master 分支和远程同步了</div><div class="line">git pull origin master</div></pre></td></tr></table></figure>
+<h2 id="5-6合并分支"><a href="#5-6合并分支" class="headerlink" title="5.6合并分支"></a>5.6合并分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//  把 mybranch分支合并到当前分支 当前分支为master</div><div class="line">git merge mybranch</div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/git/" rel="tag"># git</a>
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/hexo换电脑/" rel="next" title="hexo换电脑">
+                <i class="fa fa-chevron-left"></i> hexo换电脑
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/iframe跨越自适应高度/" rel="prev" title="iframe跨越自适应高度">
+                iframe跨越自适应高度 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="git简单应用/"
+           data-title="git简单应用" data-url="https://junyu-node.github.io/git简单应用/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="https://avatars1.githubusercontent.com/u/15951949?v=3&s=128"
+               alt="junyu" />
+          <p class="site-author-name" itemprop="name">junyu</p>
+           
+              <p class="site-description motion-element" itemprop="description">学习总结 思考感悟 知识管理</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-安装git"><span class="nav-number">1.</span> <span class="nav-text">1.安装git</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-基本配置"><span class="nav-number">2.</span> <span class="nav-text">2.基本配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-配置自己的用户名密码"><span class="nav-number">2.1.</span> <span class="nav-text">1.配置自己的用户名密码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-基本操作"><span class="nav-number">3.</span> <span class="nav-text">3.基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1新建一个仓库"><span class="nav-number">3.1.</span> <span class="nav-text">3.1新建一个仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-讲文件添加到缓存"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 讲文件添加到缓存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3查看当前版本库各个文件的状态"><span class="nav-number">3.3.</span> <span class="nav-text">3.3查看当前版本库各个文件的状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4将缓冲区的内容添加到仓库"><span class="nav-number">3.4.</span> <span class="nav-text">3.4将缓冲区的内容添加到仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5取消已经缓存的文件"><span class="nav-number">3.5.</span> <span class="nav-text">3.5取消已经缓存的文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6设置别名"><span class="nav-number">3.6.</span> <span class="nav-text">3.6设置别名</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-push到服务器上"><span class="nav-number">4.</span> <span class="nav-text">4 push到服务器上</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-分支"><span class="nav-number">5.</span> <span class="nav-text">5.分支</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2切换分支"><span class="nav-number">5.1.</span> <span class="nav-text">5.2切换分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3删除分支"><span class="nav-number">5.2.</span> <span class="nav-text">5.3删除分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-4-push到远程仓库"><span class="nav-number">5.3.</span> <span class="nav-text">5.4 push到远程仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-5-跟新分支"><span class="nav-number">5.4.</span> <span class="nav-text">5.5 跟新分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-6合并分支"><span class="nav-number">5.5.</span> <span class="nav-text">5.6合并分支</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">junyu</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"http://junyu-node.duoshuo.com"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
