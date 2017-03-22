@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="git,hexo," />
+  <meta name="keywords" content="hexo,git," />
 
 
 
@@ -93,7 +93,7 @@
 <meta property="og:url" content="https://junyu-node.github.io/hexo换电脑/index.html">
 <meta property="og:site_name" content="junyu blog">
 <meta property="og:description" content="换了电脑编辑我的方法是新建一个hexo的分支储存编辑的文件">
-<meta property="og:updated_time" content="2017-03-22T09:31:38.000Z">
+<meta property="og:updated_time" content="2017-03-22T09:47:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo换电脑">
 <meta name="twitter:description" content="换了电脑编辑我的方法是新建一个hexo的分支储存编辑的文件">
@@ -140,6 +140,16 @@
 
 
 
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?33438f0a10c1389908796cdf8c3b6caf";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -232,9 +242,39 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'yBBCHczEQy4isXyS-wws','2.0.0');
+</script>
+
+
+
+    </div>
   
 </nav>
 
@@ -356,7 +396,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/junyu-node/junyu-node.github.io.git</div><div class="line"></div><div class="line">cd junyu-node.github.io.git</div></pre></td></tr></table></figure>
 <p>2.安装npm</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm install hexo</div><div class="line">npm install</div><div class="line">npm install hexo-deployer-git//（记得，不需要hexo init这条指令）。</div><div class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure>
-<p>3.修改 next 里边的配置 然后就可以正常的使用了<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  <span class="comment">#categories: /categories</span></div><div class="line">  about: /about</div><div class="line">  archives: /archives</div><div class="line">  tags: /tags</div><div class="line">  <span class="comment">#commonweal: /404.html</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="comment"># Enable/Disable menu icons.</span></div><div class="line"><span class="comment"># Icon Mapping:</span></div><div class="line"><span class="comment">#   Map a menu item to a specific FontAwesome icon name.</span></div><div class="line"><span class="comment">#   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.</span></div><div class="line"><span class="comment">#   When an question mask icon presenting up means that the item has no mapping icon.</span></div><div class="line">menu_icons:</div><div class="line">  enable: true</div><div class="line">  <span class="comment">#KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome</span></div><div class="line">  home: home</div><div class="line">  about: <span class="string">"贾畯嵎(junyu)"</span></div><div class="line">  categories: th</div><div class="line">  schedule: calendar</div><div class="line">  tags: tags</div><div class="line">  archives: archive</div><div class="line">  sitemap: sitemap</div><div class="line">  commonweal: heartbeat</div><div class="line">  swiftype_key: yBBCHczEQy4isXyS-wws</div><div class="line">  baidu_analytics: <span class="number">33438</span>f0a10c1389908796cdf8c3b6caf</div><div class="line"></div><div class="line">  duoshuo_shortname: junyu-node</div></pre></td></tr></table></figure></p>
+<p>3.修改 next 里边的配置 然后就可以正常的使用了<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  <span class="comment">#categories: /categories</span></div><div class="line">  about: /about</div><div class="line">  archives: /archives</div><div class="line">  tags: /tags</div><div class="line">  php: /php</div><div class="line">  <span class="comment">#commonweal: /404.html</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="comment"># Enable/Disable menu icons.</span></div><div class="line"><span class="comment"># Icon Mapping:</span></div><div class="line"><span class="comment">#   Map a menu item to a specific FontAwesome icon name.</span></div><div class="line"><span class="comment">#   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.</span></div><div class="line"><span class="comment">#   When an question mask icon presenting up means that the item has no mapping icon.</span></div><div class="line">menu_icons:</div><div class="line">  enable: true</div><div class="line">  <span class="comment">#KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome</span></div><div class="line">  home: home</div><div class="line">  about: <span class="string">"贾畯嵎(junyu)"</span></div><div class="line">  categories: th</div><div class="line">  schedule: calendar</div><div class="line">  tags: tags</div><div class="line">  archives: archive</div><div class="line">  sitemap: sitemap</div><div class="line">  commonweal: heartbeat</div><div class="line">  swiftype_key: yBBCHczEQy4isXyS-wws</div><div class="line">  baidu_analytics: <span class="number">33438</span>f0a10c1389908796cdf8c3b6caf</div><div class="line"></div><div class="line">  duoshuo_shortname: junyu-node</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -386,9 +426,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag"># git</a>
-          
             <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/git/" rel="tag"># git</a>
           
         </div>
       
@@ -674,7 +714,7 @@
   
 
   <script type="text/javascript">
-    var duoshuoQuery = {short_name:"http://junyu-node.duoshuo.com"};
+    var duoshuoQuery = {short_name:"junyu-node"};
     (function() {
       var ds = document.createElement('script');
       ds.type = 'text/javascript';ds.async = true;
