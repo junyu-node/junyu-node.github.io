@@ -93,7 +93,7 @@
 <meta property="og:url" content="https://junyu-node.github.io/vuex/index.html">
 <meta property="og:site_name" content="junyu blog">
 <meta property="og:description" content="一些关于vuex 的自己使用的情况">
-<meta property="og:updated_time" content="2017-04-20T08:18:12.000Z">
+<meta property="og:updated_time" content="2017-04-22T08:34:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vuex">
 <meta name="twitter:description" content="一些关于vuex 的自己使用的情况">
@@ -404,8 +404,8 @@
         <p>一些关于vuex 的自己使用的情况</p>
 <a id="more"></a>
 <h2 id="1-首先是引用和定义"><a href="#1-首先是引用和定义" class="headerlink" title="1. 首先是引用和定义"></a>1. 首先是引用和定义</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">安装</div><div class="line">npm install vuex --save</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">import Vue from &apos;vue&apos;</div><div class="line">import Vuex from &apos;vuex&apos; //引用</div><div class="line">import App from &apos;./App&apos;</div><div class="line"></div><div class="line">Vue.use(Vuex); // 把 vuex 安装到vue 里边</div><div class="line">const store =new Vuex.Store(&#123;</div><div class="line">  state: &#123;</div><div class="line">    vesselArr:[] //定义一个参数</div><div class="line">  &#125;,</div><div class="line">  mutations:&#123;</div><div class="line">  	addvessel (state)&#123; //定义一个方法</div><div class="line">  		state.vesselArr.push(&#123;id:Math.random(),inner:&apos;msg&apos;+Math.random()&#125;);</div><div class="line">  	&#125;</div><div class="line">  &#125;</div><div class="line">&#125;)</div><div class="line"></div><div class="line">Vue.config.productionTip = false</div><div class="line"></div><div class="line">/* eslint-disable no-new */</div><div class="line">new Vue(&#123;</div><div class="line">  el: &apos;#app&apos;,</div><div class="line">  store, //把 store 对象提供给 “store” 选项，这可以把 store 的实例注入所有的子组件</div><div class="line">  template: &apos;&lt;App/&gt;&apos;,</div><div class="line">  components: &#123; App &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p>state</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">this.$store.state //获取state</div></pre></td></tr></table></figure>
+<p>state 设置的基本的变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//获取 state</div><div class="line">this.$store.state</div></pre></td></tr></table></figure>
 
       
     </div>
